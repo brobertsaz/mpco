@@ -17,6 +17,7 @@ gem 'haml-rails'
 gem 'high_voltage'
 gem 'mysql2'
 gem 'simple_form'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
@@ -35,14 +36,14 @@ group :development do
   gem 'rb-fchange', :require=>false
   gem 'rb-fsevent', :require=>false
   gem 'rb-inotify', :require=>false
+  gem 'xray-rails'
 end
 group :development, :test do
   gem 'factory_girl_rails'
   gem 'faker'
-  gem 'pry-rails'
-  gem 'pry-rescue'
   gem 'puma'
   gem 'rspec-rails'
+  gem 'jazz_hands'
 end
 group :production do
   gem 'unicorn'
